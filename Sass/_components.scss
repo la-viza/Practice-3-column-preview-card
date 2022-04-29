@@ -1,0 +1,87 @@
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: inherit;
+  max-height: inherit;
+  padding: 3rem;
+  color: var(--color-neutral-white);
+
+  &#first {
+    background-color: var(--color-primary-orange);
+  }
+
+  &#second {
+    background-color: var(--color-primary-dark);
+  }
+
+  &#third {
+    background-color: var(--color-primary-very-dark);
+  }
+
+  &__btn {
+    margin-top: 5rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      border: 1px solid var(--color-neutral-white);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:active {
+        color: var(--color-neutral-gray-light);
+      }
+    }
+    &#btn-one {
+      color: var(--color-primary-orange);
+    }
+    &#btn-two {
+      color: var(--color-primary-dark);
+    }
+
+    &#btn-three {
+      color: var(--color-primary-very-dark);
+    }
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 4rem;
+  }
+
+  &__text {
+    .heading {
+      font-family: var(--secondary-font);
+      color: var(--color-neutral-gray-light);
+      font-size: 2.5rem;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 2rem 0;
+    }
+
+    .paragraph {
+      font-size: 1.2rem;
+      font-family: var(--primary-font);
+      line-height: 1.5;
+    }
+  }
+}

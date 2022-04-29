@@ -1,0 +1,25 @@
+:root {
+  // COLORS
+
+  --color-primary-orange: hsl(31, 77%, 52%);
+  --color-primary-dark: hsl(184, 100%, 22%);
+  --color-primary-very-dark: hsl(179, 100%, 13%);
+
+  --color-neutral-white: hsla(0, 0%, 100%, 0.75);
+  --color-neutral-gray-light: hsl(0, 0%, 95%);
+
+  // FONTS
+
+  --primary-font: "Lexend Deca", sans-serif;
+  --secondary-font: "Big Shoulders Display", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 93.75%; // 1rem = 10px, 15px/16px (default font-size) = 66.6%
+}

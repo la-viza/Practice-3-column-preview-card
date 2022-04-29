@@ -1,0 +1,144 @@
+:root {
+  --color-primary-orange: hsl(31, 77%, 52%);
+  --color-primary-dark: hsl(184, 100%, 22%);
+  --color-primary-very-dark: hsl(179, 100%, 13%);
+  --color-neutral-white: hsla(0, 0%, 100%, 0.75);
+  --color-neutral-gray-light: hsl(0, 0%, 95%);
+  --primary-font: "Lexend Deca", sans-serif;
+  --secondary-font: "Big Shoulders Display", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 93.75%;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__box {
+  max-height: 70vh;
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: inherit;
+  max-height: inherit;
+  padding: 3rem;
+  color: var(--color-neutral-white);
+}
+
+.section#first {
+  background-color: var(--color-primary-orange);
+}
+
+.section#second {
+  background-color: var(--color-primary-dark);
+}
+
+.section#third {
+  background-color: var(--color-primary-very-dark);
+}
+
+.section__btn {
+  margin-top: 5rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.section__btn:hover, .section__btn:active {
+  background-color: transparent;
+  border: 1px solid var(--color-neutral-white);
+}
+
+.section__btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section__btn a:hover, .section__btn a:active {
+  color: var(--color-neutral-gray-light);
+}
+
+.section__btn#btn-one {
+  color: var(--color-primary-orange);
+}
+
+.section__btn#btn-two {
+  color: var(--color-primary-dark);
+}
+
+.section__btn#btn-three {
+  color: var(--color-primary-very-dark);
+}
+
+.section__icon {
+  height: 2.5rem;
+  width: 4rem;
+}
+
+.section__text .heading {
+  font-family: var(--secondary-font);
+  color: var(--color-neutral-gray-light);
+  font-size: 2.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.section__text .paragraph {
+  font-size: 1.2rem;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+}
+/*# sourceMappingURL=main.css.map */
