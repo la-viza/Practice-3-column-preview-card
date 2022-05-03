@@ -20,7 +20,7 @@ html {
 }
 
 .container {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,8 +35,16 @@ html {
 
 @media only screen and (max-width: 75em) {
   .container {
-    max-height: 100vh;
-    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -44,27 +52,37 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 70vh;
-  max-width: 70%;
+  height: 70vh;
+  width: 75%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px !important;
+  border-radius: 10px;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .container__box {
+    height: 100%;
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 56.25em) {
   .container__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-height: 100vh;
-    max-width: 90%;
-    padding-top: 3rem;
+    height: 100%;
+    width: 85%;
+    margin-top: 1rem;
   }
 }
 
@@ -85,22 +103,45 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: inherit;
-  max-height: inherit;
+  height: 60vh;
+  width: 70%;
   padding: 3rem;
   color: var(--color-neutral-white);
+  overflow: hidden;
 }
 
 .section#first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: var(--color-primary-orange);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .section#first {
+    margin-top: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
 .section#second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: var(--color-primary-dark);
 }
 
 .section#third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: var(--color-primary-very-dark);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section#third {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .section__btn {
@@ -113,6 +154,22 @@ html {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .section__btn {
+    margin-top: 2rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section__btn {
+    margin-top: 2rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
 }
 
 .section__btn:hover, .section__btn:active {
@@ -155,25 +212,43 @@ html {
   padding: 2rem 0;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .section__text .heading {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+}
+
 .section__text .paragraph {
   font-size: 1.2rem;
   font-family: var(--primary-font);
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 75em) {
-  .section {
-    max-height: 100vh;
-    max-width: 100%;
+@media only screen and (max-width: 56.25em) {
+  .section__text .paragraph {
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 56.25em) {
-  .section {
+@media only screen and (max-width: 75em) {
+  .section__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section__text {
+    height: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
