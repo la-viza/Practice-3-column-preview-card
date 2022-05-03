@@ -37,3 +37,14 @@
     }
   }
 }
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: var(--primary-font);
+
+  a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+  }
+}

@@ -86,6 +86,17 @@ html {
   }
 }
 
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: var(--primary-font);
+}
+
+.footer a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 1rem;
   text-align: center;
@@ -110,7 +121,13 @@ html {
   overflow: hidden;
 }
 
-.section#first {
+@media only screen and (max-width: 56.25em) {
+  .section[id^="section"] {
+    height: auto;
+  }
+}
+
+.section#section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,20 +135,20 @@ html {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .section#first {
+  .section#section1 {
     margin-top: 1rem;
     border-radius: 10px 10px 0 0;
   }
 }
 
-.section#second {
+.section#section2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: var(--color-primary-dark);
 }
 
-.section#third {
+.section#section3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +156,7 @@ html {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .section#third {
+  .section#section3 {
     border-radius: 0 0 10px 10px;
   }
 }
@@ -225,14 +242,8 @@ html {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 56.25em) {
-  .section__text .paragraph {
-    font-size: 1rem;
-  }
-}
-
 @media only screen and (max-width: 75em) {
-  .section__text {
+  .section__text .paragraph {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -246,7 +257,8 @@ html {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .section__text {
+  .section__text .paragraph {
+    font-size: 1rem;
     height: 100%;
     width: 100%;
   }
